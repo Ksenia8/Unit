@@ -1,0 +1,65 @@
+.section-tasks {
+    position: relative;
+    padding: 40px 0 65px;
+    background-color: #fff;
+    border-bottom: 1px solid #e1e1e1;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 68px;
+        height: 68px;
+        background-color: #a4eecb;
+        transform: rotate(45deg);
+        transform: translate(-50%, -50%) rotate(45deg);
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+        
+        @media (min-width: 1200px) {
+            display: block;
+            width: 165px;
+            height: 165px;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding: 60px 0 70px;
+    }
+    
+    @media (min-width: 1200px) {
+        padding: 95px 0 75px;
+    }
+}
+
+.column-right {
+
+    @media (min-width: 768px) {
+        width: 55%;
+        text-align: left;
+        align-self: flex-start;
+    }
+    
+    @media (min-width: 1200px) {
+        width: 100%;
+        align-self: center;
+    }
+}
+
+.column-left {
+
+    @media (min-width: 768px) {
+        width: 45%;
+    }
+    
+    @media (min-width: 1200px) {
+        width: 100%;
+    }
+}
